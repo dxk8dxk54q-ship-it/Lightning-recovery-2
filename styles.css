@@ -1,6 +1,6 @@
 :root {
-  --primary: #0b2345;   /* dark navy */
-  --accent: #f97316;    /* orange CTA */
+  --primary: #0b2345;
+  --accent: #f97316;
   --bg-light: #f5f5f5;
   --text-main: #111827;
   --text-muted: #4b5563;
@@ -61,7 +61,7 @@ a {
   white-space: nowrap;
 }
 
-/* Header / logo */
+/* Header */
 header {
   border-bottom: 1px solid var(--border-light);
   background: #ffffff;
@@ -119,11 +119,7 @@ header {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
 
-.btn-call-header:hover {
-  opacity: 0.95;
-}
-
-/* Navigation */
+/* Nav */
 .nav-links {
   display: flex;
   flex-wrap: wrap;
@@ -232,21 +228,11 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
 }
 
-.btn-call-main:hover {
-  opacity: 0.95;
-}
-
 .hero-secondary-text {
   font-size: 0.9rem;
   color: var(--text-muted);
 }
 
-.hero-phone-inline {
-  font-weight: 600;
-  color: var(--primary);
-}
-
-/* Hero form card */
 .hero-card {
   background: #ffffff;
   border-radius: 0.75rem;
@@ -267,6 +253,7 @@ main {
   margin-bottom: 1rem;
 }
 
+/* Form */
 .form-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -300,12 +287,6 @@ main {
   outline: none;
 }
 
-.form-field input:focus,
-.form-field textarea:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 1px rgba(249, 115, 22, 0.2);
-}
-
 .form-field textarea {
   min-height: 70px;
   resize: vertical;
@@ -313,7 +294,7 @@ main {
 
 .btn-submit {
   width: 100%;
-  margin-top: 0.4rem;
+  margin-top: 0.6rem;
   background: var(--primary);
   color: #ffffff;
   border: none;
@@ -324,17 +305,13 @@ main {
   cursor: pointer;
 }
 
-.btn-submit:hover {
-  opacity: 0.95;
-}
-
 .form-note {
   margin-top: 0.4rem;
   font-size: 0.78rem;
   color: var(--text-muted);
 }
 
-/* Section titles */
+/* Generic sections */
 .section-title {
   font-size: 1.4rem;
   margin-bottom: 0.8rem;
@@ -368,17 +345,6 @@ main {
   border: 1px solid var(--border-light);
 }
 
-.card h3 {
-  font-size: 1rem;
-  margin-bottom: 0.35rem;
-  color: var(--primary);
-}
-
-.card p {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-
 .list-check {
   list-style: none;
   font-size: 0.92rem;
@@ -388,13 +354,6 @@ main {
   display: flex;
   gap: 0.45rem;
   margin-bottom: 0.25rem;
-}
-
-.list-check li::before {
-  content: "•";
-  color: var(--accent);
-  font-size: 1.1rem;
-  line-height: 1;
 }
 
 /* How it works */
@@ -464,7 +423,7 @@ main {
   margin-top: 0.6rem;
 }
 
-/* Areas covered */
+/* Areas */
 .areas-list {
   columns: 2;
   column-gap: 2rem;
@@ -477,10 +436,6 @@ main {
   .areas-list {
     columns: 1;
   }
-}
-
-.areas-list li {
-  margin-bottom: 0.25rem;
 }
 
 /* Reviews */
@@ -504,34 +459,11 @@ main {
   font-size: 0.9rem;
 }
 
-.review-text {
-  margin-bottom: 0.6rem;
-  color: var(--text-muted);
-}
-
-.review-name {
-  font-weight: 600;
-  color: var(--primary);
-  font-size: 0.9rem;
-}
-
-.review-meta {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-/* Bottom CTA */
+/* Bottom CTA + footer */
 .bottom-cta {
   text-align: center;
 }
 
-.bottom-cta p {
-  margin-bottom: 0.8rem;
-  font-size: 0.95rem;
-  color: var(--text-muted);
-}
-
-/* Footer */
 footer {
   border-top: 1px solid var(--border-light);
   padding: 1.5rem 1rem 2rem;
@@ -547,16 +479,4 @@ footer {
   gap: 1rem;
   justify-content: space-between;
   color: var(--text-muted);
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.footer-links a {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
 }
