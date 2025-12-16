@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <title>24/7 Vehicle Recovery in Portsmouth | Lightning Recovery</title>
-  <meta name="description" content="24/7 emergency vehicle recovery and breakdown service in Portsmouth and surrounding areas. Fast local tow trucks, clear prices and free quotes over the phone." />
+  <meta name="description" content="24/7 emergency vehicle recovery and breakdown service in Portsmouth and surrounding areas. Fast local tow trucks, clear prices and clear quotes over the phone." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="page">
@@ -16,7 +16,7 @@
           <span>🚨 Stuck right now? 24/7 vehicle recovery in Portsmouth &amp; surrounding areas.</span>
         </div>
         <div class="top-bar-right">
-          <span class="top-bar-phone">Call now: <a href="tel:07XXXXXXXXX">07XX XXX XXXX</a></span>
+          <span class="top-bar-phone">Call now: <a href="tel:07366302341">07366 302341</a></span>
         </div>
       </div>
     </div>
@@ -36,7 +36,7 @@
         </nav>
         <div class="header-cta">
           <div class="header-hours">Open 24/7 – Cars &amp; Vans</div>
-          <a href="tel:07XXXXXXXXX" class="btn-call-header">
+          <a href="tel:07366302341" class="btn-call-header">
             <span>📞</span>
             <span>Call Now</span>
           </a>
@@ -63,32 +63,32 @@
             </ul>
 
             <div class="hero-cta-row">
-              <a href="tel:07XXXXXXXXX" class="btn-call-main">
+              <a href="tel:07366302341" class="btn-call-main">
                 <span>📞</span>
                 <span>Call Now for an Instant Quote</span>
               </a>
             </div>
             <div class="hero-secondary-text">
-              Or request a call back using the form – we’ll ring you as soon as possible.
+              Prefer to message instead of calling? Use the WhatsApp form on the right.
             </div>
           </div>
 
-          <!-- Right form card -->
+          <!-- Right card: form that opens WhatsApp -->
           <div class="hero-card">
-            <div class="hero-card-title">Request a Call Back</div>
+            <div class="hero-card-title">Request a Call Back on WhatsApp</div>
             <div class="hero-card-subtitle">
-              Tell us where you are and what’s happened. We’ll call you back with a price and ETA.
+              Fill in your details and we’ll open WhatsApp with everything pre-filled. Just hit send.
             </div>
 
-            <form>
+            <form onsubmit="return sendWhatsApp(event);">
               <div class="form-grid form-grid--two">
                 <div class="form-field">
                   <label for="name">Name</label>
                   <input id="name" name="name" type="text" placeholder="Your name" required />
                 </div>
                 <div class="form-field">
-                  <label for="phone">Mobile number</label>
-                  <input id="phone" name="phone" type="tel" placeholder="07XX XXX XXXX" required />
+                  <label for="phone">Your mobile number</label>
+                  <input id="phone" name="phone" type="tel" placeholder="07..." required />
                 </div>
               </div>
 
@@ -105,13 +105,13 @@
 
               <div class="form-field">
                 <label for="issue">What’s happened?</label>
-                <textarea id="issue" name="issue" placeholder="Broke down on the M27, car won’t start, accident damage..."></textarea>
+                <textarea id="issue" name="issue" placeholder="Help, I’ve broken down, car won’t start etc..." required></textarea>
               </div>
 
-              <button type="submit" class="btn-submit">Request My Call Back</button>
+              <button type="submit" class="btn-submit">Open WhatsApp &amp; Send Details</button>
               <p class="form-note">
-                🚨 If you’re in a dangerous location (e.g. motorway hard shoulder), it’s always quickest to call us directly on
-                <span class="hero-phone-inline">07XX XXX XXXX</span>.
+                This will open WhatsApp with your info pre-filled to <strong>07366 302341</strong>. If WhatsApp doesn’t open,
+                please call us directly instead.
               </p>
             </form>
           </div>
@@ -192,13 +192,13 @@
         <div class="section-inner">
           <h2 class="section-title">How It Works</h2>
           <p class="section-lead">
-            We keep it simple – no complicated paperwork or long forms. A quick call is usually all it takes to get help on the way.
+            We keep it simple – no complicated paperwork or long forms. A quick call or WhatsApp is usually all it takes to get help on the way.
           </p>
 
           <div class="steps">
             <div>
               <div class="step-num">Step 1</div>
-              <div class="step-title">You Call or Request a Call Back</div>
+              <div class="step-title">You Call or Fill the WhatsApp Form</div>
               <p class="step-text">
                 Tell us where you are, what you’re driving and what’s happened – breakdown, accident or just need a tow.
               </p>
@@ -261,7 +261,7 @@
               <li>Location (home, roadside, motorway, car park, etc.)</li>
               <li>How easy it is to access and load the vehicle</li>
             </ul>
-            <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.7rem;">
+            <p style="font-size:0.9rem; color:#4b5563; margin-top:0.7rem;">
               We’ll explain everything on the call so you know exactly what you’re paying for before you agree to anything.
             </p>
           </div>
@@ -328,15 +328,19 @@
         <div class="section-inner bottom-cta">
           <h2 class="section-title">Need Recovery Right Now?</h2>
           <p>
-            If it’s urgent, calling is always quickest. If it’s not an emergency, send us a call-back request and we’ll get in touch as soon as we can.
+            Calling is always quickest. If you can’t talk, fill in the form above to open WhatsApp with your details ready to send.
           </p>
-          <div style="margin-top:1rem;">
-            <a href="tel:07XXXXXXXXX" class="btn-call-main">
+          <div style="margin-top:1rem; display:flex; justify-content:center; gap:0.75rem; flex-wrap:wrap;">
+            <a href="tel:07366302341" class="btn-call-main">
               <span>📞</span>
-              <span>Call Now for 24/7 Recovery</span>
+              <span>Call 07366 302341</span>
+            </a>
+            <a href="https://wa.me/447366302341" class="btn-call-main">
+              <span>💬</span>
+              <span>WhatsApp Us</span>
             </a>
           </div>
-          <p style="margin-top:0.6rem; font-size:0.88rem; color:var(--text-muted);">
+          <p style="margin-top:0.6rem; font-size:0.88rem; color:#4b5563;">
             Lightning Recovery – Portsmouth &amp; surrounding areas
           </p>
         </div>
@@ -357,5 +361,33 @@
       </div>
     </footer>
   </div>
+
+  <!-- Simple JS to turn the form into a WhatsApp message -->
+  <script>
+    function sendWhatsApp(event) {
+      event.preventDefault();
+
+      var name = document.getElementById('name').value.trim();
+      var phone = document.getElementById('phone').value.trim();
+      var location = document.getElementById('location').value.trim();
+      var vehicle = document.getElementById('vehicle').value.trim();
+      var issue = document.getElementById('issue').value.trim();
+
+      var message =
+        "New recovery enquiry:%0A%0A" +
+        "Name: " + name + "%0A" +
+        "Mobile: " + phone + "%0A" +
+        "Location: " + location + "%0A" +
+        "Vehicle: " + (vehicle || "Not given") + "%0A" +
+        "Issue: " + issue;
+
+      // Your WhatsApp number: 44 + number without leading zero
+      var whatsappNumber = "447366302341";
+      var url = "https://wa.me/" + whatsappNumber + "?text=" + message;
+
+      window.location.href = url;
+      return false;
+    }
+  </script>
 </body>
 </html>
