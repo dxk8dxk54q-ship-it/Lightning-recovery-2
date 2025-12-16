@@ -48,8 +48,8 @@
       <!-- Hero -->
       <section class="section hero">
         <div class="section-inner hero-inner">
-          <!-- Left copy -->
-          <div>
+          <!-- Left: main text -->
+          <div class="hero-left">
             <h1 class="hero-title">24/7 Vehicle Recovery in Portsmouth</h1>
             <p class="hero-subtitle">
               Fast local recovery for cars and vans in Portsmouth, Havant, Fareham, Gosport and nearby areas. One-off pricing – no membership.
@@ -68,55 +68,63 @@
               </a>
             </div>
             <div class="hero-secondary-text">
-              Don’t want to call? Use the WhatsApp form on the right – we’ll open WhatsApp with your details ready to send.
+              Don’t want to call? Use the WhatsApp form – we’ll open WhatsApp with your details ready to send.
             </div>
           </div>
 
-          <!-- Right card: form that opens WhatsApp -->
-          <div class="hero-card">
-            <div class="hero-card-title">Request a Call Back via WhatsApp</div>
-            <div class="hero-card-subtitle">
-              Fill this in and we’ll open WhatsApp with everything pre-filled to 07366 302341. You just hit send.
+          <!-- Right: image + WhatsApp form -->
+          <div class="hero-right">
+            <div class="hero-image">
+              <img src="images/recovery-truck.jpg"
+                   alt="Recovery truck loading a car at the roadside in Portsmouth" />
             </div>
 
-            <form onsubmit="return sendWhatsApp(event);">
-              <div class="form-grid form-grid--two">
-                <div class="form-field">
-                  <label for="name">Name</label>
-                  <input id="name" name="name" type="text" placeholder="Your name" required />
-                </div>
-                <div class="form-field">
-                  <label for="phone">Your mobile number</label>
-                  <input id="phone" name="phone" type="tel" placeholder="07..." required />
-                </div>
+            <div class="hero-card">
+              <div class="hero-card-title">Request a Call Back via WhatsApp</div>
+              <div class="hero-card-subtitle">
+                Fill this in and we’ll open WhatsApp with everything pre-filled to 07366 302341. You just hit send.
               </div>
 
-              <div class="form-grid form-grid--two">
-                <div class="form-field">
-                  <label for="location">Location / postcode</label>
-                  <input id="location" name="location" type="text" placeholder="e.g. PO1 1AA" required />
+              <form onsubmit="return sendWhatsApp(event);">
+                <div class="form-grid form-grid--two">
+                  <div class="form-field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your name" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="phone">Your mobile number</label>
+                    <input id="phone" name="phone" type="tel" placeholder="07..." required />
+                  </div>
                 </div>
-                <div class="form-field">
-                  <label for="vehicle">Vehicle (make &amp; model)</label>
-                  <input id="vehicle" name="vehicle" type="text" placeholder="e.g. BMW 3 Series" />
+
+                <div class="form-grid form-grid--two">
+                  <div class="form-field">
+                    <label for="location">Location / postcode</label>
+                    <input id="location" name="location" type="text" placeholder="e.g. PO1 1AA" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="vehicle">Vehicle (make &amp; model)</label>
+                    <input id="vehicle" name="vehicle" type="text" placeholder="e.g. BMW 3 Series" />
+                  </div>
                 </div>
-              </div>
 
-              <div class="form-field">
-                <label for="issue">What’s happened?</label>
-                <textarea id="issue" name="issue" placeholder="Broke down, car won’t start, accident, etc..." required></textarea>
-              </div>
+                <div class="form-field">
+                  <label for="issue">What’s happened?</label>
+                  <textarea id="issue" name="issue" placeholder="Broke down, car won’t start, accident, etc..." required></textarea>
+                </div>
 
-              <button type="submit" class="btn-submit">Open WhatsApp &amp; Send Details</button>
-              <p class="form-note">
-                If WhatsApp doesn’t open, or it’s an emergency, call us directly on <a href="tel:07366302341">07366 302341</a>.
-              </p>
-            </form>
+                <button type="submit" class="btn-submit">Open WhatsApp &amp; Send Details</button>
+                <p class="form-note">
+                  If WhatsApp doesn’t open, or it’s an emergency, call us directly on
+                  <a href="tel:07366302341">07366 302341</a>.
+                </p>
+              </form>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Why choose us -->
+      <!-- Why drivers use us -->
       <section class="section section--grey">
         <div class="section-inner">
           <h2 class="section-title">Why Drivers Use Lightning Recovery</h2>
@@ -125,13 +133,13 @@
             <div class="card">
               <h3>Local &amp; Fast</h3>
               <p>
-                Based around Portsmouth so we’re not sending a truck from miles away. Typical arrival time is 30–60 minutes, traffic depending.
+                Based around Portsmouth, not miles away. Typical arrival time is 30–60 minutes, traffic depending.
               </p>
             </div>
             <div class="card">
               <h3>No Membership</h3>
               <p>
-                You only pay when you actually need help. No annual contracts, no hidden call-out fees when we arrive.
+                You only pay when you need help. No yearly contracts or surprise “call-out” fees.
               </p>
             </div>
             <div class="card">
